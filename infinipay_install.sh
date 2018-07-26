@@ -1,10 +1,11 @@
-!/bin/bash
+#!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='ifp.conf'
 CONFIGFOLDER='/root/.ifp'
 COIN_DAEMON='ifpd'
 COIN_CLI='ifp-cli'
+COIN_PATH='/usr/local/bin'
 COIN_TGZ='https://github.com/infinipay/infinipay/releases/download/v1.0/infinipay.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='ifp'
